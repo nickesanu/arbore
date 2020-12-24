@@ -1,0 +1,72 @@
+Creati 2 clase - Director, Fisier (fiecare clasa trebuie sa fie definita in propriul fisier .py)
+Clasa Director trebuie sa aiba urmatoarele atribute: 
+    - nume 
+    - cale absoluta 
+Clasa Director trebuie sa implementeze urmatoarele metode: 
+    - afisare elemente din director
+    - afisare elemente din director al caror nume corespunde unui anumit regex
+Clasa Fisier trebuie sa aiba urmatoarele atribute: 
+    - nume 
+    - cale absoluta
+Clasa Fisier trebuie sa implementeze urmatoarele metode: 
+    - afisare continut fisier 
+    - afisare continut fisier doar liniile care vor corespunde unui anumit regex
+In programul principal (alt fisier .py), plecand de la structura de directoare de mai jos:
+“Arbore”
+1
+|---------2
+|         |-------5
+|         |       |--test5
+|         |----6
+|         |    |-----test6
+|         |     
+|         |-----------test2
+|
+|---------3
+|         |------------test3
+|
+|---------4
+          |------------test4
+5 directoare – 5 fișiere
+Fișierele conținând textele:
+    
+#1/2/5/test5
+Test5
+Test5
+Test5
+#1/2/6/test6
+Test6
+Test6
+Test6
+#1/2/test2
+Test2
+Test2
+Test2
+    
+#1/3/test3
+Test3
+Test3
+Stop
+Test3
+#1/4/test4
+Test4
+Test4
+Test4
+Rezolvati urmatoarele cerinte:
+1.Folosind recursivitatea, creati o lista de fisiere (obiecte ale clasei Fisier) si o lista de directoare (obiecte ale clase Director)
+2.Plecand de la lista de directoare creeata, pentru fiecare element din lista afisati toate elementele din acel director folosind metoda corespunzatoare definita in clasa Director
+Exemplu:
+Daca elementul din lista este directorul 1, se vor afisa directoarele 2,3,4
+3.Plecand de la lista de fisiere creeata, pentru fiecare element din lista afisati continutul fisierelor folosind metoda corespunzatoare definita in clasa Fisier: 
+    - fara regex 
+        Exemplu:
+        Daca elementul din lista este fisierul test5, se va afisa:
+        Test5
+        Test5
+        Test5
+    - cu regex - un regex ales de voi 
+        Exemplu:
+        Daca elementul din lista este fisierul test5, si regex-ul Test* se va afisa:
+        Test5
+        Test5
+        Test5
