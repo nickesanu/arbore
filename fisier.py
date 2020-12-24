@@ -18,3 +18,5 @@ class Fisier:
             for line in my_list:
                 if re.search(regex, line.rstrip('\n')):
                     print(line.rstrip('\n'))
+                    
+print('spaima hackerului chinez loveste dinou')
